@@ -16,9 +16,13 @@ const connection = mysql.createConnection({
 
 connection.connect((err) => {
   if (err) throw err;
-  console.log('Connected!');
+  console.log('Connected to database!');
 });
 
-app.get('/search', function( req, res ) {
-  console.log(req)
-}
+// app.get('/search', function( req, res ) {
+//   console.log(req)
+// }
+
+app.listen(3000, function() {
+  console.log("The server is up and runing on port 3000")
+})
