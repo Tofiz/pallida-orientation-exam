@@ -6,10 +6,11 @@ let button = document.querySelector(".button");
 let input = document.querySelector(".input");
 let police = document.querySelector(".police");
 let diplomats = document.querySelector(".diplomats");
-let main = document.querySelector(".main");
+let main = document.querySelector('.main');
 
 let table = document.createElement("table");
 main.appendChild(table);
+
 
 const ajax = function(method, res, callback, data) {
   const xhr = new XMLHttpRequest();
@@ -58,8 +59,8 @@ function printer(element) {
 
 function printOrganiser(item) {
   header();
-  item.forEach( function(element, i) {
-    let toPrint = [element.plate, element.car_brand, 
+  item.forEach(function(element, i) {
+    var toPrint = [element.plate, element.car_brand, 
       element.car_model, element.color, 
       element.year];
     printer(toPrint);
