@@ -18,3 +18,7 @@ connection.connect((err) => {
   if (err) throw err;
   console.log('Connected!');
 });
+
+app.get('/search', function( req, res ) {
+  console.log(req)
+}
