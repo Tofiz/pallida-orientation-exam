@@ -19,10 +19,10 @@ connection.connect((err) => {
   console.log('Connected to database!');
 });
 
-// app.get('/search', function( req, res ) {
-//   console.log(req)
-// }
+app.get('/search', function(req, res) {
+  console.log("Juheeee")
+});
 
 app.listen(3000, function() {
-  console.log("The server is up and runing on port 3000")
+  console.log("The server is up and running on port 3000")
 })
